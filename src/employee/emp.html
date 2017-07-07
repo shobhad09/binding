@@ -1,0 +1,13 @@
+<h2>{{title}}</h2>
+Employee Firstname:<input type="text" name="empfirst" [value]="empobj.employeefirstname"/>
+Employee Lastname:<input type="text" name="emplast" [value]="empobj.employeelastname"/>
+<input type="button" (click)="addemployee()" value="submit">
+  <table>
+    <tbody>
+<tr *ngFor="let emp of employees">
+    
+    <td>{{emp.employeefirstname}}{{emp.employeelastname}}</td>
+    </tr>
+</tbody>
+      
+</table>
